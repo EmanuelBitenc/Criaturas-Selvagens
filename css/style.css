@@ -1,0 +1,284 @@
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+dd,
+a,
+dt,
+dl {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: #222;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  background-color: #faf6ed;
+  color: #222;
+  -webkit-font-smoothing: antialiased;
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr;
+}
+
+.menu {
+  grid-column: 3/5;
+  background-color: #ffbf40;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px 20px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.grid-section {
+  grid-column: 2/4;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 90px 300px 1fr;
+  grid-gap: 20px;
+  margin-bottom: 4rem;
+}
+.titulo {
+  font-family: "Playfair Display SC", georgia;
+  font-size: 6rem;
+  line-height: 1;
+  grid-column: 1/4;
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.animais p {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.animais h2 {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  color: #b32110;
+}
+
+.animais h2::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: #ffa011;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.animais-lista {
+  grid-column: 2;
+  height: 370px;
+  overflow-y: scroll;
+}
+.animais-lista li {
+  cursor: pointer;
+}
+
+body .animais-lista {
+  direction: rtl;
+}
+.animais-lista::-webkit-scrollbar {
+  width: 18px;
+}
+
+.animais-lista::-webkit-scrollbar-thumb {
+  background: #ffa011;
+  border-left: 4px solid #faf6ed;
+  border-right: 4px solid #faf6ed;
+  border-radius: 10px;
+}
+
+.animais-lista::-webkit-scrollbar-track {
+  background: #faf6ed;
+}
+
+.animais-descricao section {
+  grid-column: 3;
+  margin-bottom: 4rem;
+}
+
+.faq .titulo {
+  margin-bottom: 4rem;
+}
+.faq dl {
+  grid-column: 2/5;
+}
+
+.faq dt {
+  margin-bottom: 1rem;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  color: #b32110;
+}
+.faq dt::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: #ffa011;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}
+
+.faq dd {
+  margin-left: 19px;
+  font-family: helvetica, arial;
+  margin-bottom: 2rem;
+}
+.mapa {
+  grid-column: 2;
+  border: 1px solid #b99856;
+}
+
+.dados li {
+  margin-left: 15px;
+  margin-bottom: 1rem;
+  font-family: helvetica, monospace;
+}
+
+.contato .svg {
+  display: inline-block;
+  width: 25px;
+  margin-bottom: -5px;
+  margin-right: 5px;
+}
+
+/**
+.contato .dados li::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 6px;
+  background: #ffa011;
+  margin-right: 5px;
+  margin-bottom: 2px;
+}*/
+
+footer {
+  background-color: #ffa011;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  grid-column: 3/5;
+}
+
+footer p {
+  font-family: "IBM Plex Mono", monospace;
+  padding: 20px 35px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+@media (max-width: 800px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+
+  .menu,
+  .grid-section,
+  footer {
+    grid-column: 1;
+  }
+
+  .grid-section {
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+  }
+  .animais-lista {
+    grid-column: 1;
+  }
+
+  .faq dl,
+  .contato .dados,
+  .contato .mapa {
+    grid-column: 1/ 3;
+  }
+  .contato .dados li {
+    margin: 8px 0px;
+  }
+
+  .contato .dados {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  .grid-section h1 {
+    font-size: 3rem;
+  }
+
+  .menu {
+    margin-top: 0px;
+  }
+  footer {
+    margin-bottom: 0px;
+  }
+}
+.js .js-animaisD section {
+  display: none;
+}
+
+.js .js-animaisD section.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-20px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.js .js-faqDD {
+  display: none;
+}
+
+.js .js-faqDD.ativo {
+  display: block;
+  animation: showDrop 0.5s forwards;
+}
+
+@keyframes showDrop {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
