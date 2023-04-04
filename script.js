@@ -1,5 +1,25 @@
 const activeClass = "ativo";
 
+function scrollSuave() {
+  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+
+  function scroll(event) {
+    event.preventDefault();
+
+    const href = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(href);
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+  linksInternos.forEach((link) => {
+    link.addEventListener("click", scroll);
+  });
+}
+scrollSuave();
+//Gerado pela IA
+/*
 function rolagem() {
   const links = document.querySelectorAll("nav a");
 
@@ -15,7 +35,7 @@ function rolagem() {
   }
 }
 rolagem();
-
+**/
 function tabActive() {
   const animaisL = document.querySelectorAll(".js-animaisL li");
   const animaisD = document.querySelectorAll(".js-animaisD Section");
