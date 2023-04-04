@@ -283,6 +283,12 @@ footer p {
   }
 }
 
+@media (max-width: 550px) {
+  .menu ul {
+    justify-content: center;
+  }
+}
+
 @media (max-width: 450px) {
   .contato .dados li {
     margin: 8px 0px;
