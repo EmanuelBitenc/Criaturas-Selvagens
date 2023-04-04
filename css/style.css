@@ -282,3 +282,13 @@ footer p {
     transform: translate3d(0, 0, 0);
   }
 }
+
+@media (max-width: 450px) {
+  .contato .dados li {
+    margin: 8px 0px;
+  }
+
+  .contato .dados {
+    grid-template-columns: 1fr;
+  }
+}

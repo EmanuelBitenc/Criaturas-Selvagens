@@ -1,5 +1,21 @@
 const activeClass = "ativo";
 
+function rolagem() {
+  const links = document.querySelectorAll("nav a");
+
+  for (let link of links) {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      const href = link.getAttribute("href");
+      const targetElement = document.querySelector(href);
+
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    });
+  }
+}
+rolagem();
+
 function tabActive() {
   const animaisL = document.querySelectorAll(".js-animaisL li");
   const animaisD = document.querySelectorAll(".js-animaisD Section");
