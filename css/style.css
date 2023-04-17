@@ -134,6 +134,7 @@ body .animais-lista {
 }
 
 .faq dt {
+  cursor: pointer;
   margin-bottom: 1rem;
   font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
@@ -216,7 +217,6 @@ footer p {
   .animais-lista {
     grid-column: 1;
   }
-
   .faq dl,
   .contato .dados,
   .contato .mapa {
