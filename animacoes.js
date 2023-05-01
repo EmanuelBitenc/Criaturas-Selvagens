@@ -1,7 +1,9 @@
 const activeClass = "ativo";
 
 function scrollSuave() {
-  const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
+  const linksInternos = document.querySelectorAll(
+    '[data-anime="suave"] a[href^="#"]'
+  );
 
   function scroll(event) {
     event.preventDefault();
@@ -37,18 +39,23 @@ function rolagem() {
 rolagem();
 **/
 function tabActive() {
-  const animaisL = document.querySelectorAll(".js-animaisL li");
-  const animaisD = document.querySelectorAll(".js-animaisD Section");
-  animaisD[0].classList.add(activeClass);
+  const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
+  const tabContent = document.querySelectorAll("[data-tab='content'] section");
 
-  if (animaisL.length && animaisD) {
+  tabContent[0].classList.add(activeClass);
+  if (tabMenu.length && tabContent) {
     function activeTab(index) {
-      animaisD.forEach((section) => {
+      tabContent.forEach((section) => {
+        console.log("foi");
         section.classList.remove(activeClass);
       });
-      animaisD[index].classList.add(activeClass);
+      tabContent[index].classList.add(
+        activeClass,
+        tabContent[index].dataset.anime
+      );
     }
-    animaisL.forEach((item, index) => {
+
+    tabMenu.forEach((item, index) => {
       item.addEventListener("click", () => {
         activeTab(index);
       });
@@ -75,7 +82,7 @@ function dtActive() {
 dtActive();
 
 function scrollAnimacao() {
-  const sections = document.querySelectorAll(".js-scroll");
+  const sections = document.querySelectorAll("[data-anime='scroll']");
   const tamanho = window.innerHeight * 0.7;
 
   if (sections.length) {
