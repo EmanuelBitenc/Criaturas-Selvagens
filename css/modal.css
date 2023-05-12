@@ -40,7 +40,7 @@
   color: #252525;
   position: absolute;
   top: 5px;
-  right: 0px;
+  right: -1px;
   width: 40px;
   padding: 1px;
   padding-left: 10px;
@@ -50,7 +50,7 @@
   font-size: 1.1rem;
   cursor: pointer;
 
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .modal .fechar:hover {
@@ -74,7 +74,7 @@
   width: 220px;
   background-color: #ffbf40;
   cursor: pointer;
-  box-shadow: 0 1px 20px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.5);
   border: none;
   font-size: 1.1rem;
   font-weight: bold;

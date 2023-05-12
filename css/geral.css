@@ -311,6 +311,17 @@ footer p {
   }
 }
 
+@media (max-width: 310px) {
+  .contato {
+    justify-items: center;
+    min-width: 200px;
+    margin: 0;
+  }
+  .mapa {
+    width: 200px;
+  }
+}
+
 .js [data-anime="scroll"] {
   opacity: 0;
   transition: 3s;
