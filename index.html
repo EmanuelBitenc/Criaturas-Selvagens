@@ -16,94 +16,111 @@
 
 
 <body>
-    <nav class="menu" data-anime="suave">
-        <ul>
-            <li><a href="#animais">Animais</a></li>
-            <li><a href="">Sobre</a></li>
-            <li><a href="#faq">FAQ</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="">Login</a></li>
-        </ul>
-    </nav>
+    <div class="grid-container">
+        <nav class="menu" data-anime="suave">
+            <ul>
+                <li><a href="#animais">Animais</a></li>
+                <li><a href="">Sobre</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a data-modal="abrir" href="login.html">Login</a></li>
+            </ul>
+        </nav>
 
-    <section class="grid-section animais" data-anime="scroll" id="animais">
-        <h1 class="titulo ">Criaturas Selvagens</h1>
-        <ul class="animais-lista " data-tab='menu'>
-            <li><img src="img/imagem1.jpg" alt="Raposa"></li>
-            <li><img src="img/imagem2.jpg" alt="Esquilo"></li>
-            <li><img src="img/imagem3.jpg" alt="Urso"></li>
-            <li><img src="img/imagem4.jpg" alt="Lobo"></li>
-            <li><img src="img/imagem5.jpg" alt="Macaco"></li>
-            <li><img src="img/imagem6.jpg" alt="Leão"></li>
-        </ul>
-        <div class="animais-descricao " data-tab="content">
-            <section data-anime="show-right">
-                <h2>Raposa</h2>
-                <p>As raposas são animais fascinantes e intrigantes que habitam diversos ecossistemas ao redor do mundo. Pertencentes à família Canidae, as raposas são animais carnívoros e possuem uma aparência muito característica, com suas caudas felpudas e orelhas pontudas.</p>
-                <p>As raposas são conhecidas por sua grande habilidade em se adaptar a diferentes ambientes, sendo encontradas em regiões desde as montanhas cobertas de neve até os desertos quentes. Esses animais são muito ágeis e possuem sentidos extremamente aguçados, sendo capazes de caçar suas presas com grande eficiência.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Esquilo</h2>
-                <p>Os esquilos são animais pequenos e ágeis que fazem parte da família Sciuridae. Eles são encontrados em todo o mundo, com exceção da Austrália e da Antártica. Os esquilos possuem um corpo esguio, cauda peluda e orelhas pontudas. Eles são conhecidos por sua habilidade em escalar árvores e por serem excelentes saltadores. Os esquilos possuem uma dieta variada que inclui nozes, sementes, frutas e insetos.
-                </p>
-                <p>As sementes são as principais fontes de alimentação, mas também consomem insetos e frutas. </p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Urso</h2>
-                <p>Os Ursos constituem uma família de mamíferos plantígrados, geralmente de grande porte, contendo os ursos e os pandas. Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis. Os ursídeos são geralmente animais omnívoros, mas se alimentam principalmente de carne.</p>
-                <p>A maioria dos ursos costumam preparar-se para hibernar durante o inverno, comendo grandes quantidades de comida antes de entrar em uma toca para o período de sono profundo.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Lobo</h2>
-                <p>O lobo é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</p>
-                <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann. Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros.</p>
-            </section>
-            <section data-anime="show-right">
-                <h2>Macaco</h2>
-                <p>Macaco é um termo utilizado para referir-se a algumas espécies de primatas. Nem todos os primatas são macacos, mas todos os macacos são primatas. A ordem Primates está dividida em duas subordens: Strepsirrhini e Haplorrhini. Na subordem Strepsirrhini, estão inclusos lêmures, lórises e gálagos. Na subordem Haplorrhini, por sua vez, incluem-se os társios e antropoides. Os antropoides incluem os macacos e o ser humano.</p>
+        <section class="grid-section animais" data-anime="scroll" id="animais">
+            <h1 class="titulo ">Criaturas Selvagens</h1>
+            <ul class="animais-lista " data-tab='menu'>
+                <li><img src="img/imagem1.jpg" alt="Raposa"></li>
+                <li><img src="img/imagem2.jpg" alt="Esquilo"></li>
+                <li><img src="img/imagem3.jpg" alt="Urso"></li>
+                <li><img src="img/imagem4.jpg" alt="Lobo"></li>
+                <li><img src="img/imagem5.jpg" alt="Macaco"></li>
+                <li><img src="img/imagem6.jpg" alt="Leão"></li>
+            </ul>
+            <div class="animais-descricao " data-tab="content">
+                <section data-anime="show-right">
+                    <h2>Raposa</h2>
+                    <p>As raposas são animais fascinantes e intrigantes que habitam diversos ecossistemas ao redor do mundo. Pertencentes à família Canidae, as raposas são animais carnívoros e possuem uma aparência muito característica, com suas caudas felpudas e orelhas pontudas.</p>
+                    <p>As raposas são conhecidas por sua grande habilidade em se adaptar a diferentes ambientes, sendo encontradas em regiões desde as montanhas cobertas de neve até os desertos quentes. Esses animais são muito ágeis e possuem sentidos extremamente aguçados, sendo capazes de caçar suas presas com grande eficiência.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Esquilo</h2>
+                    <p>Os esquilos são animais pequenos e ágeis que fazem parte da família Sciuridae. Eles são encontrados em todo o mundo, com exceção da Austrália e da Antártica. Os esquilos possuem um corpo esguio, cauda peluda e orelhas pontudas. Eles são conhecidos por sua habilidade em escalar árvores e por serem excelentes saltadores. Os esquilos possuem uma dieta variada que inclui nozes, sementes, frutas e insetos.
+                    </p>
+                    <p>As sementes são as principais fontes de alimentação, mas também consomem insetos e frutas. </p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Urso</h2>
+                    <p>Os Ursos constituem uma família de mamíferos plantígrados, geralmente de grande porte, contendo os ursos e os pandas. Algumas características comuns dos ursos são pelagem espessa, rabo curto, o olfato desenvolvido e as garras não retráteis. Os ursídeos são geralmente animais omnívoros, mas se alimentam principalmente de carne.</p>
+                    <p>A maioria dos ursos costumam preparar-se para hibernar durante o inverno, comendo grandes quantidades de comida antes de entrar em uma toca para o período de sono profundo.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Lobo</h2>
+                    <p>O lobo é uma espécie de mamífero canídeo do gênero Canis. É um sobrevivente da Era do Gelo, originário do Pleistoceno Superior, cerca de 300 mil anos atrás. É o maior membro remanescente selvagem da família canidae.</p>
+                    <p>O peso e tamanho dos lobos variam muito em todo o mundo, tendendo a aumentar proporcionalmente com a latitude, como previsto pela teoria de Christian Bergmann. Em geral, a altura, medida a partir dos ombros, varia de 60 a 95 centímetros.</p>
+                </section>
+                <section data-anime="show-right">
+                    <h2>Macaco</h2>
+                    <p>Macaco é um termo utilizado para referir-se a algumas espécies de primatas. Nem todos os primatas são macacos, mas todos os macacos são primatas. A ordem Primates está dividida em duas subordens: Strepsirrhini e Haplorrhini. Na subordem Strepsirrhini, estão inclusos lêmures, lórises e gálagos. Na subordem Haplorrhini, por sua vez, incluem-se os társios e antropoides. Os antropoides incluem os macacos e o ser humano.</p>
 
-            </section>
-            <section>
-                <h2>Leão</h2>
-                <p>O leão é um mamífero pertencente à ordem Carnivora e família Felidae, sendo conhecido como “rei das selvas”. Ele se alimenta de outros animais, como gnus e zebras, e vive em grupos, que apresentam divisões bem marcadas, sendo o macho responsável pela defesa do grupo e a fêmea pela caça e cuidado com os filhotes.</p>
-                <p>Apesar de serem admirados por sua força, atualmente as populações de leões estão em declínio, sendo a espécie classificada como vulnerável pela IUCN.</p>
-            </section>
+                </section>
+                <section>
+                    <h2>Leão</h2>
+                    <p>O leão é um mamífero pertencente à ordem Carnivora e família Felidae, sendo conhecido como “rei das selvas”. Ele se alimenta de outros animais, como gnus e zebras, e vive em grupos, que apresentam divisões bem marcadas, sendo o macho responsável pela defesa do grupo e a fêmea pela caça e cuidado com os filhotes.</p>
+                    <p>Apesar de serem admirados por sua força, atualmente as populações de leões estão em declínio, sendo a espécie classificada como vulnerável pela IUCN.</p>
+                </section>
+            </div>
+        </section>
+
+        <section class="grid-section faq" data-anime="scroll" id="faq">
+            <h1 class="titulo">FAQ</h1>
+            <dl>
+                <dt>Qual a idade dos animais?</dt>
+                <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+
+                <dt>Eles são fantásticos?</dt>
+                <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+
+                <dt>Qual a diferença?</dt>
+                <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+
+                <dt>Como proteger?</dt>
+                <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
+            </dl>
+        </section>
+        <section class="grid-section contato" data-anime="scroll" id="contato">
+            <h1 class="titulo">contato</h1>
+            <div class="mapa">
+                <img src="img/mapa.png" alt="Mapa">
+            </div>
+            <ul class="dados">
+                <li><img class="svg" src="img/Frame 1.svg">contato@gmail.com</li>
+                <li><img class="svg" src="img/Frame 2.svg">+55 (61) 9999-9999</li>
+                <li><img class="svg" src="img/Frame 3.svg">Brasília - DF</li>
+                <li><img class="svg" src="img/Frame 4.svg">Seg à Sex das 8 às 18</li>
+            </ul>
+        </section>
+        <footer>
+            <p>Todos os direitos reservados</p>
+        </footer>
+    </div>
+
+    <section class="modal-container " data-modal="container">
+        <div class="modal">
+            <button data-modal="fechar" class="fechar">X</button>
+            <h3 class="title">Login</h3>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="Email">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" placeholder="Senha">
+            <button type="submit" class="entrar">Entrar</button>
         </div>
     </section>
 
-    <section class="grid-section faq" data-anime="scroll" id="faq">
-        <h1 class="titulo">FAQ</h1>
-        <dl>
-            <dt>Qual a idade dos animais?</dt>
-            <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
 
-            <dt>Eles são fantásticos?</dt>
-            <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-            <dt>Qual a diferença?</dt>
-            <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-
-            <dt>Como proteger?</dt>
-            <dd class="js-faqDD">As raposas são animais mamíferos e onívoros pertencentes à família Canidae. São vulpídeos de porte médio, caracterizados por um focinho comprido e uma cauda longa e peluda.</dd>
-        </dl>
-    </section>
-    <section class="grid-section contato" data-anime="scroll" id="contato">
-        <h1 class="titulo">contato</h1>
-        <div class="mapa">
-            <img src="img/mapa.png" alt="Mapa">
-        </div>
-        <ul class="dados">
-            <li><img class="svg" src="img/Frame 1.svg">contato@gmail.com</li>
-            <li><img class="svg" src="img/Frame 2.svg">+55 (61) 9999-9999</li>
-            <li><img class="svg" src="img/Frame 3.svg">Brasília - DF</li>
-            <li><img class="svg" src="img/Frame 4.svg">Seg à Sex das 8 às 18</li>
-        </ul>
-    </section>
-    <footer>
-        <p>Todos os direitos reservados</p>
-    </footer>
     <script type="module" src="js/script.js"></script>
 
 </body>
+
 
 </html>
