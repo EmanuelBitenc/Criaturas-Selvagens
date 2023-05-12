@@ -311,13 +311,13 @@ footer p {
   }
 }
 
-@media (max-width: 310px) {
+@media (max-width: 380px) {
   .contato {
-    justify-items: center;
     min-width: 200px;
     margin: 0;
   }
   .mapa {
+    justify-self: center;
     width: 200px;
   }
 }
