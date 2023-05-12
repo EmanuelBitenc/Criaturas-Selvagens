@@ -50,6 +50,9 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.1em;
 }
+.menu .perfil {
+  margin: 0px 3px;
+}
 
 .grid-section {
   grid-column: 2/4;
@@ -135,6 +138,7 @@ body {
 }
 
 .faq dt {
+  padding: 5px 0px 5px 0px;
   cursor: pointer;
   margin-bottom: 1rem;
   font-family: "IBM Plex Mono", monospace;
@@ -206,6 +210,9 @@ footer p {
   }
   .grid-container section {
     margin: 10px;
+  }
+  dt {
+    margin-bottom: 10px;
   }
 
   footer {
