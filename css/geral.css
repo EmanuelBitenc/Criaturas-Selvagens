@@ -311,7 +311,7 @@ footer p {
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
   .contato {
     min-width: 200px;
     margin: 0;
