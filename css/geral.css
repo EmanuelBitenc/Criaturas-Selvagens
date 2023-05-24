@@ -163,6 +163,7 @@ body {
 .mapa {
   grid-column: 2;
   border: 1px solid #b99856;
+  position: relative;
 }
 
 .dados li {
@@ -191,14 +192,15 @@ body {
 
 footer {
   background-color: #ffa011;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   margin-top: 2rem;
   grid-column: 3/5;
 }
 
 footer p {
   font-family: "IBM Plex Mono", monospace;
-  padding: 20px 35px;
+  padding: 10px 35px;
+  font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -219,7 +221,7 @@ footer p {
     text-align: center;
   }
   footer p {
-    padding: 20px 0 10px 0;
+    padding: 10px 0 10px 0;
     font-size: 0.6rem;
   }
 
