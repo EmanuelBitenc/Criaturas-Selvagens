@@ -51,7 +51,7 @@ body {
   letter-spacing: 0.1em;
 }
 .menu .perfil {
-  margin: 0px 3px;
+  position: relative;
 }
 
 .grid-section {

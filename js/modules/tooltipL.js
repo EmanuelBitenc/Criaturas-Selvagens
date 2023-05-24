@@ -1,10 +1,14 @@
-export default function tooltip() {
-  const tooltip = document.querySelectorAll('[data-tooltip="mapa"]');
+export default function tooltipL() {
+  const tooltip = document.querySelectorAll('[data-tooltip="linkedin"]');
   tooltip.forEach((element) => {
     element.addEventListener("mouseover", onMouseOver);
   });
 
-  function onMouseOver(event) {
+  const link = document.querySelector(".perfil");
+  const X = link.offsetLeft;
+  const Y = link.offsetTop;
+
+  function onMouseOver() {
     const tooltipBox = criarTooltip(this);
 
     onMouseMove.tooltipBox = tooltipBox;
@@ -14,6 +18,9 @@ export default function tooltip() {
     onMouseLeave.element = this;
     this.addEventListener("mouseleave", onMouseLeave);
     this.addEventListener("mouseleave", onMouseLeaveF);
+
+    tooltipBox.style.left = link.offsetLeft + 10 + "px";
+    tooltipBox.style.top = link.offsetTop + 40 + "px";
 
     function onMouseLeaveF() {
       tooltipBox.remove();
@@ -31,16 +38,13 @@ export default function tooltip() {
   };
 
   const onMouseMove = {
-    handleEvent(event) {
-      this.tooltipBox.style.left = event.pageX + 20 + "px";
-      this.tooltipBox.style.top = event.pageY + 20 + "px";
-    },
+    handleEvent(event) {},
   };
 
   function criarTooltip(element) {
     const tooltipBox = document.createElement("div");
     const text = element.getAttribute("aria-label");
-    tooltipBox.classList.add("tooltip");
+    tooltipBox.classList.add("tooltipL");
     tooltipBox.innerText = text;
     document.body.appendChild(tooltipBox);
     return tooltipBox;
