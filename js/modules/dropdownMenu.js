@@ -11,6 +11,7 @@ export default function dropdownMenu() {
     });
     dropdown.addEventListener("mouseleave", () => {
       dropdownMenu.classList.remove(activeClass);
+      dropdown.classList.remove(activeClass);
     });
 
     dropdowns.forEach((menu) => {
@@ -24,6 +25,7 @@ export default function dropdownMenu() {
   }
 
   function activeDropdown(element) {
+    dropdown.classList.toggle(activeClass);
     element.classList.toggle(activeClass);
   }
 }
