@@ -212,7 +212,7 @@ footer p {
     grid-template-columns: 1fr;
   }
   .grid-container section {
-    margin: 10px;
+    padding: 10px;
   }
   dt {
     margin-bottom: 10px;
