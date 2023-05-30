@@ -1,0 +1,57 @@
+[data-dropdown] {
+  position: relative;
+}
+
+[data-dropdown] .dropdown-menu {
+  display: none;
+}
+[data-dropdown] .dropdown-menu.ativo {
+  display: block;
+  animation: show-down 0.3s forwards;
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.dropdown-menu {
+  background-color: #d34232;
+  position: absolute;
+  z-index: 200;
+  top: 40px;
+  left: 10px;
+  border: 1px solid #222;
+}
+
+.dropdown-menu::before {
+  content: url("/img/dropdown-svgrepo-com.svg");
+  color: #d34232;
+  transform: scaleY(-1);
+  display: block;
+  position: absolute;
+  top: -16px;
+  z-index: 221px;
+}
+
+.dropdown-menu li p {
+  cursor: pointer;
+  display: block;
+  padding: 10px 0px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin: 0 8px;
+  letter-spacing: 0.08em;
+}
+
+.dropdown-menu li p:hover {
+  color: whitesmoke;
+}
